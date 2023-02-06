@@ -58,7 +58,7 @@ void so_start_exec(so_exec_t *exec, char *argv[])
 {
 	int *pargc;
 
-	fix_auxv(exec->base_addr, __environ);
+	// fix_auxv(exec->base_addr, __environ);
 	/* fix argv to use the one from the main prog */
 	argv--;
 
